@@ -414,7 +414,7 @@ export default function App() {
             className="text-4xl sm:text-5xl font-semibold text-center mb-2"
             style={{
               textShadow:
-                "0 0 5px #00c6ff, 0 0 10px #00c6ff, 0 0 20px #00c6ff, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
+                "0 0 5px #E0B4FF, 0 0 10px #E0B4FF, 0 0 15px #E0B4FF, 0 0 20px #B347E8, 0 0 35px #B347E8, 0 0 40px #B347E8, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
             }}
           >
             {"Guess who? xD".split("").map((char, index) => (
@@ -423,7 +423,8 @@ export default function App() {
                 className="jumpy-char inline-block"
                 style={{
                   animationDelay: `${index * 0.1}s`,
-                  color: "#00c6ff",
+                  color: "#F0C8FF",
+                  filter: "brightness(1.2)",
                 }}
               >
                 {char === " " ? "\u00A0" : char}
